@@ -1,0 +1,38 @@
+{
+  "name": "codehouze_utils",
+  "version": "1.0.0",
+  "description": "Sample Js Utilities library",
+  "main": "dist/coehouze.cjs.js",
+  "module": "dist/codehouze.esm.js",
+  "browser": "dist/codehouze.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node test/spec",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codehouze/node_plugin.git"
+  },
+  "author": "codehouze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Codehouze/node_plugin/issues"
+  },
+  "homepage": "https://github.com/Codehouze/node_plugin#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "rollup": "^2.41.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
